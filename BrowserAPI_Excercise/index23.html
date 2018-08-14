@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Texts</title>
+    <script>
+        window.onload = function performExcercise() {
+            let ulElement = document.querySelector('ul');
+            ulElement.innerHTML = '<li>Item 1</li><li>Item 2</li><li>Item 3</li><li>Item 4</li><li>Item 5</li>';
+
+           console.log(ulElement.innerHTML);
+
+            //children
+            let ulChildren = ulElement.children;
+            console.log('-------------');
+            console.log(ulChildren[0]);
+
+            //sibling 
+            console.log('-------------');
+            console.log(ulElement.previousSibling.previousSibling);
+
+            console.log('-------------');
+            console.log(ulElement.previousSibling);
+
+            //extra
+            let pElement = document.querySelector('p');
+            pElement.ondblclick = function showText() {
+                alert(pElement.textContent);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Main Title</h1><p>This is a paragraph. Highlight only single word.</p><ul></ul>
+</body>
+
+</html>

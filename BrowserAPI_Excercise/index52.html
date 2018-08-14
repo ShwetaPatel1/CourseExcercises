@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSON from API </title>
+    <style>
+        
+    </style>
+
+    <script>
+        window.onload = function () {
+            console.log('Page loaded');
+
+            fetch('https://swapi.co/api/films/')
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                   // console.log(JSON.parse(data));
+                  // let str = JSON.stringify(data);
+                  // console.log(JSON.parse(str));
+                    let episodeArray = Array.from(data.results);
+                    let tableElemt = document.createElement('table');
+                    createTableHeader(tableElemt);
+                    tableElemt.border = '1px';
+
+                    episodeArray.forEach(element => {
+                        const tr = createTableRow(element);
+                        tableElemt.appendChild(tr);
+                    });
+
+                    document.body.appendChild(tableElemt);
+                });
+
+
+                //creating a row of the HTML table 
+            function createTableRow(rowObject) {
+                let tr = document.createElement('tr');
+                tr.bgColor = '#fff'
+                let td1 = document.createElement('td');
+                td1.textContent = rowObject.title;
+                tr.appendChild(td1);
+
+                let td2 = document.createElement('td');
+                td2.textContent = rowObject.director;
+                tr.appendChild(td2);
+
+                let td3 = document.createElement('td');
+                td3.textContent = rowObject.producer;
+                tr.appendChild(td3);
+
+                let td4 = document.createElement('td');
+                td4.textContent = rowObject.episode_id;
+                tr.appendChild(td4);
+                return tr;
+            }
+
+            //craeting a table header 
+            //question : how to make this dynamically, when we dont know the key in key:value part of json
+            function createTableHeader(table) {
+                let tr = document.createElement('tr');
+                tr.bgColor = '#afa';
+
+                let th1 = document.createElement('th');
+                th1.textContent = 'Title';
+                tr.appendChild(th1);
+
+                let th2 = document.createElement('th');
+                th2.textContent = 'Director';
+                tr.appendChild(th2);
+
+                let th3 = document.createElement('th');
+                th3.textContent = 'Producer';
+                tr.appendChild(th3);
+
+                let th4 = document.createElement('th');
+                th4.textContent = 'Episode #';
+                tr.appendChild(th4);
+
+                table.appendChild(tr);
+            }
+        }
+        /*
+{title: "Attack of the Clones",
+ episode_id: 2,
+  opening_crawl: "There is unrest in the Galactic Senate. Several t…THE REPUBLIC
+↵to assist the overwhelmed↵Jedi....",
+ director: "George Lucas",
+  producer: "Rick McCallum",
+   …}
+        */
+
+    </script>
+</head>
+
+<body>
+    <div id="main"></div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Events</title>
+    <script>
+        window.onload = function () {
+            let buttonElement = document.getElementById('firstbutton');
+            // buttonElement.addEventListener('click', function () {
+            //     alert('Oh don\'t  click me..!');
+            // });
+
+
+            buttonElement.addEventListener('mousedown', changeColorOnMouseDown);
+            buttonElement.addEventListener('mouseup',changeColorOnMouseDown);
+
+
+
+            function changeColorOnMouseDown() {
+                event.preventDefault();
+                alert(event.type);
+                if(event.type == 'mousedown')
+                {
+                this.style.color = 'red';
+                }
+                else
+                {
+                this.style.color = 'green';
+                }
+            }
+
+        };
+    </script>
+</head>
+
+<body>
+    <div></div>
+    <button id="firstbutton">Click me!!</button>
+</body>
+
+</html>

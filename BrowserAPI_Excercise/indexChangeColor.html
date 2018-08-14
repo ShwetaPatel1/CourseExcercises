@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Products</title>
+    <script>
+        window.onload = function mouseOverStuff() {
+            let myLink = document.querySelector('a');
+
+            let myCounter = 1;
+            myLink.addEventListener("mouseenter", function (event) {
+                switch (myCounter) {
+                    case 1:
+                        event.target.style.backgroundColor = "red";
+                        console.log(myCounter);
+                        myCounter++;
+                        break;
+                    case 2:
+                        event.target.style.backgroundColor = "blue";
+                        console.log(myCounter);
+                        myCounter++;
+                        break;
+                    case 3:
+                        event.target.style.backgroundColor = "green";
+                        console.log(myCounter);
+                        myCounter++;
+                        break;
+                    case 4:
+                        event.target.style.backgroundColor = "grey";
+                        console.log(myCounter);
+                        myCounter++;
+                        break;
+                    default:
+                        event.target.style.backgroundColor = "white";
+                        console.log(myCounter);
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <a href="#" target="_blank"> Click here</a>
+    <ul>
+        <li>Bannana</li>
+        <li>Apple</li>
+        <li>Peach</li>
+        <li>Eggs</li>
+        <li>Tomatto</li>
+        <li>Lettuce</li>
+        <li>Milk</li>
+    </ul>
+</body>
+
+</html>

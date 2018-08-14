@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+    <script>
+        window.onload = function () {
+            let documentJASONstr = `{
+  "title": "A New Hope", 
+  "episode_id": 4, 
+  "species": [
+    "https://swapi.co/api/species/5/", 
+    "https://swapi.co/api/species/3/", 
+    "https://swapi.co/api/species/2/", 
+    "https://swapi.co/api/species/1/", 
+    "https://swapi.co/api/species/4/"
+  ]
+}`;
+
+    // let smallJSON = `{"name" : "shweta","age" : "32"}`;
+    // let userJason = JSON.stringify(smallJSON);
+    // let userObject = JSON.parse(smallJSON);
+    // console.log(userJason);
+    // console.log('-------------');
+    // console.log(smallJSON.name); //undefined
+    // console.log(userObject.name);
+
+    let documentObject = JSON.parse(documentJASONstr);
+
+    let h1 = document.createElement('h1');
+    h1.textContent = documentObject.title;
+    document.body.appendChild(h1);
+
+    let p = document.createElement('p');
+    p.textContent = 'Episode No. : ' + documentObject.episode_id;
+    document.body.appendChild(p);
+
+    let linkArray = documentObject.species;
+    //console.log(linkArray.length);
+
+    let counter = 0;
+    while(counter<linkArray.length)
+    {
+        let a = document.createElement('a');
+        let hr = document.createElement('hr');
+        a.textContent = 'Link ' + (counter+1);
+        a.href = linkArray[counter];
+        document.body.appendChild(a);
+        document.body.appendChild(hr);
+        counter++;
+    }
+
+
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <div id="jsonresponse"></div>
+</body>
+
+</html>

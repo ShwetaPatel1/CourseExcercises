@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        Timer
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        let tick = 1;
+        let interval;
+        let sessionTime = prompt('How many seconds you want to be logged in..?');
+       
+        function printTimePassed() {
+            console.log(tick++);
+            if (tick > parseInt(sessionTime)) { //validation for number is required
+                clearInterval(interval);
+                console.log("Login again. Session expired.");
+            }
+        }
+        interval = setInterval(printTimePassed, 1000);
+    </script>
+</head>
+
+<body>
+    <h1>Hi... </h1>
+</body>
+
+</html>

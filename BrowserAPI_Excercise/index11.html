@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        let userName = prompt('1, Enter User name :');
+        alert('2, welcome '+userName+' to this site...!!');
+        function greet(name){
+            alert('3, Hey '+name+' Do you still want to be logged?');
+        }
+
+        let timer = setTimeout(greet, 5000,userName);
+        // alert(timer + '  ... 4');
+        // clearTimeout(timer);
+
+        setInterval(setTimeout(greet, 5000,userName),5);
+        clearInterval();
+    </script>
+
+</head>
+
+<body>
+    <h1>Hi</h1>
+    
+</body>
+
+</html>

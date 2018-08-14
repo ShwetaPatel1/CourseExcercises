@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSON from API </title>
+    <style>
+    </style>
+
+    <script>
+        window.onload = function () {
+            console.log('Page loaded');
+
+            fetch('http://slowwly.robertomurray.co.uk/delay/9200/url/https://swapi.co/api/films/')
+                .then(function (response) {
+                    console.log('Waiting for a promise...');
+                    return response.json();
+                })
+                .catch(error => {
+                    console.log('oops...error in first then \n' + error);
+                }
+                )
+                .then(function (data) {
+                    console.log('I got the promise from API.');
+                    //  console.log(JSON.parse(data));
+                    // let str = JSON.stringify(data);
+                    // console.log(JSON.parse(str));
+
+                    Array.from(data.results).forEach(element => {
+                        console.log('Film Title : ' + element['title']);
+                        console.log('--------------------------\n');
+                    });
+
+
+                    // let episodeArray = Array.from(data.results);
+                    // let tableElemt = document.createElement('table');
+                    // createTableHeader(tableElemt);
+                    // tableElemt.border = '1px';
+
+                    // episodeArray.forEach(element => {
+                    //     const tr = createTableRow(element);
+                    //     tableElemt.appendChild(tr);
+                    // });
+
+                    // document.body.appendChild(tableElemt);
+                })
+                .catch(error => {
+                    console.log('oops...error in sEcond then \n' + error);
+                }
+                )
+
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <div id="main"></div>
+</body>
+
+</html>
