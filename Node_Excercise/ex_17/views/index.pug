@@ -1,0 +1,17 @@
+include activity-mixin
+
+doctype html
+html(lang='en')
+  head
+    style.
+        div { 
+            border: 1px solid black;
+            }
+
+    title= title
+  body
+    div.contentClass
+    section  
+        +activity({imgSource: "./foto.jpg", activityName: "Art and Creaft", availableTime:"9:00 AM to 6:00 PM", seatsAvailable: "10", address: "xyz"})
+    section
+        +activity({imgSource: "./foto.jpg", activityName: "Pancil Art", availableTime:"8:00 AM to 6:00 PM", seatsAvailable: "3", address: "xyz"})

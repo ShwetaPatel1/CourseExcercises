@@ -1,0 +1,16 @@
+{
+  "name": "ex_10",
+  "version": "1.0.0",
+  "description": "Exercise 10",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "author": "shweta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "one-liner-joke": "^1.0.0"
+  }
+}

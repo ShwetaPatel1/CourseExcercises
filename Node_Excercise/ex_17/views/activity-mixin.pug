@@ -1,0 +1,12 @@
+mixin activity(activity)
+
+  style(type="text/css").
+      .activity { 
+         color: black;
+      }
+  div.activity
+    img(src='#{activity.imgSource}', width='100px', length='100px')
+    p Name : #{activity.activityName}
+    p Time : #{activity.availableTime}
+    p Seats Available : #{activity.seatsAvailable}
+    p Address : #{activity.address}

@@ -1,0 +1,20 @@
+{
+  "name": "ex_3",
+  "version": "1.0.0",
+  "description": "learning node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Ooops... something went wrong\" && exit 1",
+    "start": "node index1.js",
+    "print": "echo \"Hello world...we are going to learn node js\"...",
+    "uglify": "uglifyjs index.js --output script.js"
+  },
+  "author": "shweta",
+  "license": "ISC",
+  "dependencies": {
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.3.25"
+  }
+}

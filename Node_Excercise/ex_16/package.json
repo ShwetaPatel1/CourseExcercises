@@ -1,0 +1,14 @@
+{
+  "name": "ex_16",
+  "version": "1.0.0",
+  "description": "Static Path\u001b[D\u001b[D\u001b[D\u001b[Dfolder Path",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "shweta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

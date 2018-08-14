@@ -1,0 +1,19 @@
+extends ./layout.pug
+include activity-mixin
+
+block scripts
+  script.
+    alert('alert from a script block');
+
+block content
+  div.title= title
+  div.contentClass
+    p 
+        span We encourage people getting envolved in their passion.
+    p We are an Activity Center appointment booking platform that is mainly designed for the Hobby clubs, Sports Clubs or adventure-activity organizers
+    p For End-users : We are providing one platform for selecting your favourite "me-time" activity center in your city.
+    p For Trainers : We are enablbing you to apply as trainer in your area of experties.
+    p For Material-Suppliers : We are providing you a direct point of contact to discuss your deals with your potential clients.
+ 
+block foot
+  .footer footer text goes here for about page...

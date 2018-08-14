@@ -1,0 +1,23 @@
+[DEBUG] Server Log: Hello Node.js
+[DEBUG] Server Log: This is a log message
+[INFO]  Server Log: Node.js is great!!
+[WARN]  Server Log: Warning, Warning, I think we have a Warning 
+[ERROR] Server Log: Mayday Mayday, we have an error, repeat.. we have an error 
+[DEBUG] Server Log: Hello Node.js
+[DEBUG] Server Log: This is a log message
+[INFO]  Server Log: Node.js is great!!
+[WARN]  Server Log: Warning, Warning, I think we have a Warning 
+[ERROR] Server Log: Mayday Mayday, we have an error, repeat.. we have an error 
+[DEBUG] Server Log: -----------------------
+[DEBUG] Server Log: Hello Node.js
+[DEBUG] Server Log: This is a log message
+[INFO]  Server Log: Node.js is great!!
+[WARN]  Server Log: Warning, Warning, I think we have a Warning 
+[ERROR] Server Log: Mayday Mayday, we have an error, repeat.. we have an error 
+[DEBUG] Server Log: -----------------------
+[DEBUG] Server Log: -----------------------
+[DEBUG] Server Log: Hello Node.js
+[DEBUG] Server Log: This is a log message
+[INFO]  Server Log: Node.js is great!!
+[WARN]  Server Log: Warning, Warning, I think we have a Warning 
+[ERROR] Server Log: Mayday Mayday, we have an error, repeat.. we have an error 

@@ -1,0 +1,14 @@
+{
+  "name": "ex_15",
+  "version": "1.0.0",
+  "description": "Middleware exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "shweta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

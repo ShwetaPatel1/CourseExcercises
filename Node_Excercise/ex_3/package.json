@@ -1,0 +1,17 @@
+{
+  "name": "ex_3",
+  "version": "1.0.0",
+  "description": "exercise 3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node indexlog.js",
+    "test": "uglifyjs index.js --output script.js"
+  },
+  "author": "shweta",
+  "license": "ISC",
+  "devDependencies": {
+    "logplease": "^1.2.14",
+    "uglify-js": "^3.3.25"
+  },
+  "dependencies": {}
+}

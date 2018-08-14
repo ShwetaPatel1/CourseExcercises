@@ -1,0 +1,12 @@
+{
+  "name": "ex_4",
+  "version": "1.0.0",
+  "description": "exercise 4",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "test": "node index5.js"
+  },
+  "author": "shweta",
+  "license": "ISC"
+}

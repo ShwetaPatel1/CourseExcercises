@@ -1,0 +1,37 @@
+doctype html
+html(lang='en')
+  head
+    title= title
+    style(type="text/css").
+      body { 
+        background-color: grey;
+        color: ghostwhite;
+        font-family: verdana, sans-serif;
+        font-size:12pt;
+      }
+      p > span {
+          color: black;
+          font-weight: bolder;
+      }
+      .title{
+          color: orange;
+          font-size: 22pt;
+      }
+      .contentClass{
+          position: relative;
+          top : 30px;
+          background-color: orange;
+          color: black;
+      }
+      .footer{
+        position: absolute;
+        top : 400px;
+        border-top: 1px solid black;
+      }
+      .home{
+        border:1px;
+      }
+    block scripts
+  body
+    block content
+    block foot
