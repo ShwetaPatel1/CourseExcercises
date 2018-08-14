@@ -1,0 +1,12 @@
+// Create a new index18.js file
+// Define a new variable with the name store and assign the value: Gianu's
+// Define a new variable with the name message and assign the value: it's the best store
+// Use console.log() to output the following message using string concatenation: Gianu's it's the best store
+// Use the right quotes to define the variables strings
+
+let store = 'Gianu\'s';
+let message = "it\'s the best store";
+let message2 = "it's the best store 2";
+ 
+console.log(store + ' : ' + message);
+console.log(store + ' : ' + message2);
