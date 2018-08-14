@@ -1,0 +1,74 @@
+/*universal selector */
+
+* {
+    background-color: black;
+    color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*  Class Selector */
+.red
+{
+    color: red;
+}
+
+/* Attribute selectors */
+input[type="text"]{
+    color: rgb(248, 250, 249);
+    border-color: olive;
+    border-style: groove;
+    border-radius: 5pt;
+    border-width: 1.5px;
+    background-color: rgb(48, 48, 49);
+}
+input[type="submit"]
+{
+    border-radius: 5pt;
+}
+
+/* attribute + Pseudo-class selector */
+input[type="submit"]:hover
+{
+    background-color: rgb(87, 124, 245);
+    color: black;
+}
+
+/*doubt */
+
+div > input[type="submit"]
+{
+    align-items: center;
+}
+
+
+hr
+{
+    border-style: double;
+   border-bottom-color: blue;
+   border-top-color: yellow;
+    border-width: 2.5px;
+    border-radius: 0.5px;
+   
+    /* border: 0.5px solid red; */
+
+}
+.hr
+{
+    /* border-color: blue;
+    border-width: 0.5px; */
+    border: 0.5px  blue solid;
+    
+}
+
+/*shared class */
+header, footer 
+{
+    color: aquamarine;
+    font-style: italic;
+}
+header::first-letter
+{
+ font-weight: bolder;
+ color: yellowgreen;
+}
+

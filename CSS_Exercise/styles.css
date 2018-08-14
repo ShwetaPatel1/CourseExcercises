@@ -1,0 +1,52 @@
+h1 {
+    color: rgb(43, 15, 146);
+    font-size: 60pt;
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+    color: green;
+
+    font-size: 30pt;
+}
+
+div {
+    color: rgb(66, 66, 8);
+   }
+/* Element with id="div1" */
+#div1 {
+    color: red;
+  }
+  
+.fontstyleclass
+{
+    font-style: italic;
+    font-size: 20pt;
+}
+/*select only those div which are with class fontstyleclass*/
+div.fontstyleclass
+{
+    color: blueviolet;
+}
+
+a {
+    color: black;
+    font-size: 40pt;
+}
+
+a:link {
+    color: red;
+  }
+  
+  a:active {
+    color: pink;
+  }
+  
+  a:hover {
+    color: rgb(32, 233, 42);
+  }
+  
+  a:visited {
+    color: rgb(69, 194, 243);
+  }
