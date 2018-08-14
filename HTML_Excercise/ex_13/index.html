@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create User</title>
+</head>
+
+<body>
+    <h1>Create User</h1>
+    <hr>
+    <form method="GET" action="" enctype="application/x-www-form-urlencoded">
+
+        <label for="name">Name :</label>
+        <input type="text" name="name">
+        <br>
+       Options : <select name="countries"  size="4">
+            <option value="">Please select an option</option>
+            <option value="deadpool">Deadpool </option>
+            <option value="batman_v_superman">Batman Vs Superman</option>
+            <option value="civil_war">Captain America: Civil War</option>
+            <option value="doctor_strange" >Doctor Strange </option>
+            <option value="suicide_squad" >Suicide Squad </option>
+            <option value="apocalypse" >X-Men: Apocalypse</option>
+            <option value="gotg_vol2" >Guardians of the Galaxy Vol 2 </option>
+            <option value=" justice_league" >Justice League</option>
+            <option value="logan" >Logan</option>
+            <option value="wonder_women" selected="selected" >Wonder Woman</option>
+            <option value=" thor_ragnarok" >Thor: Ragnarok</option>
+            <option value="black_panther" >Black Panther </option>
+        </select>
+        <br>
+        Bio : <textarea name="about" cols="30" rows="6" placeholder="Please let us know about yourself" ></textarea>
+        <br>
+        Avatar Image : <input type="file" name="filename" multiple="multiple"/>
+<br>
+<button type="reset" >Clear</button> 
+<button type="button">Add User</button>
+    </form>
+</body>
+
+</html>
